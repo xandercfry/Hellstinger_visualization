@@ -977,15 +977,15 @@
 <body>
     <div id='HUDs_Div'> 
       <div id='X3DOM_AOPT_Links' class='group'> 
-        AOE 4066: Xander Fry <br> Visualization of Hellstinger in HTML<br>
+        Visualization of the F/A-24 Hellstinger<br>
         <hr>
         <form>
-          <label><input type="radio" name="buttons" value="Viewpoint1" checked onclick="bindButtonName('Viewpoint1')"> Viewpoint 1</label><br>
-          <label><input type="radio" name="buttons" value="Viewpoint2" onclick="bindButtonName('Viewpoint2')"> Viewpoint 2</label><br>
-          <label><input type="radio" name="buttons" value="Viewpoint3" onclick="bindButtonName('Viewpoint3')"> Viewpoint 3</label><br>
-          <label><input type="radio" name="buttons" value="Viewpoint4" onclick="bindButtonName('Viewpoint4')"> Viewpoint 4</label><br>
-          <label><input type="radio" name="buttons" value="Viewpoint5" onclick="bindButtonName('Viewpoint5')"> Viewpoint 5</label><br>
-          <label><input type="radio" name="buttons" value="Viewpoint6" onclick="bindButtonName('Viewpoint6')"> Viewpoint 6</label><br>
+          <label><input type="radio" name="buttons" value="Side_View" checked onclick="bindButtonName('Side_View')"> Side View</label><br>
+          <label><input type="radio" name="buttons" value="Front_View" onclick="bindButtonName('Front_View')"> Front View</label><br>
+          <label><input type="radio" name="buttons" value="Comparitors" onclick="bindButtonName('Comparitors')"> Comparitors View</label><br>
+          <label><input type="radio" name="buttons" value="Aft_View" onclick="bindButtonName('Aft_View')"> Aft View</label><br> 
+          <!--  <label><input type="radio" name="buttons" value="Viewpoint5" onclick="bindButtonName('Viewpoint5')"> Viewpoint 5</label><br>-->
+          <label><input type="radio" name="buttons" value="Top_Down_View" onclick="bindButtonName('Top_Down_View')"> Top Down View</label><br>
         </form>
         <hr style="margin-top: 15px; margin-bottom: 10px;">
         <button id="restore-all-btn" onclick="restoreAllParts()" style="display:none; width: 100%; padding: 8px 12px; background-color: #51cf66; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Restore All Hidden</button>
@@ -994,12 +994,12 @@
 
     <x3d id='x3dElement' showStat='false' showLog='false' style='width:100%; height:100%; border:0; margin:0; padding:0;'>
       <Scene>
-        <Viewpoint id='Viewpoint1' position="629 45 18" orientation="0 1 0 0" zNear="0.1" zFar="50000" centerOfRotation="650 40 0" fieldOfView="0.78540" description="View 1"></Viewpoint>
-        <Viewpoint id='Viewpoint2' position="654 45 -12.65" orientation="0 1 0 1.5708" zNear="0.1" zFar="50000" centerOfRotation="650 40 0" fieldOfView="0.78540" description="View 2"></Viewpoint>
-        <Viewpoint id='Viewpoint3' position="725 70 -115" orientation="-0.01098 0.99894 0.04477 2.38209" zNear="0.1" zFar="50000" centerOfRotation="650 40 0" fieldOfView="0.78540" description="View 3"></Viewpoint>
-        <Viewpoint id='Viewpoint4' position="608 44 -12.65" orientation="0 1 0 -1.5708" zNear="0.1" zFar="50000" centerOfRotation="650 40 0" fieldOfView="0.78540" description="View 4"></Viewpoint>
-        <Viewpoint id='Viewpoint5' position="654 45 -22.65" orientation="0 1 0 1.5708" zNear="0.1" zFar="50000" centerOfRotation="650 40 0" fieldOfView="0.78540" description="View 5"></Viewpoint>
-        <Viewpoint id='Viewpoint6' position="628 100 -12.5" orientation="1 0 0 -1.5708" zNear="0.1" zFar="50000" centerOfRotation="650 40 0" fieldOfView="0.78540" description="Top Down"></Viewpoint>
+        <Viewpoint id='Side_View' position="629 45 18" orientation="0 1 0 0" zNear="0.1" zFar="50000" centerOfRotation="650 40 0" fieldOfView="0.78540" description="View 1"></Viewpoint>
+        <Viewpoint id='Front_View' position="658 44 -15.65" orientation="0 1 0 1.5708" zNear="0.1" zFar="50000" centerOfRotation="650 40 0" fieldOfView="0.78540" description="View 2"></Viewpoint>
+        <Viewpoint id='Comparitors' position="710 62 -115" orientation="-0.01098 0.99894 0.04477 2.38209" zNear="0.1" zFar="50000" centerOfRotation="650 40 0" fieldOfView="0.78540" description="View 3"></Viewpoint>
+        <Viewpoint id='Aft_View' position="600 44 -15.65" orientation="0 1 0 -1.5708" zNear="0.1" zFar="50000" centerOfRotation="650 40 0" fieldOfView="0.78540" description="View 4"></Viewpoint>
+        <!--<Viewpoint id='Viewpoint5' position="654 45 -22.65" orientation="0 1 0 1.5708" zNear="0.1" zFar="50000" centerOfRotation="650 40 0" fieldOfView="0.78540" description="View 5"></Viewpoint>-->
+        <Viewpoint id='Top_Down_View' position="628 110 -12.5" orientation="1 0 0 -1.5708" zNear="0.1" zFar="50000" centerOfRotation="650 40 0" fieldOfView="0.78540" description="Top Down"></Viewpoint>
 
 <NavigationInfo type='"EXAMINE" "ANY"' avatarSize="0.25 1.75 0.75" headlight="false" visibilityLimit="50000"></NavigationInfo>
         
